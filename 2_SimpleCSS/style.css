@@ -1,0 +1,27 @@
+body{
+	/*
+	always specifying margin 0 and padding 0 to the whole body means that we start with a clean slate,
+	with no articial spaces that might be introduced by specific browsers
+	*/
+	margin: 0;
+	padding: 0;
+}
+
+/*
+this chunk affects all text that is between tags with the "important-text" class
+*/
+.important{
+	font-size: 46px;
+	color: red;
+	background-color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*
+this chunk affects all text that is between tags with the "faded-text" class
+*/
+.trivial{
+	font-size: 12px;
+	color: grey;
+}

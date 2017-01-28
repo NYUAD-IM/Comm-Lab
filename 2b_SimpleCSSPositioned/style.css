@@ -1,0 +1,129 @@
+body {
+	margin: 0px;
+	padding: 0px;
+
+  /*
+  we can use the Oswald font because we specified in our HTML <head> tag
+  where that font can be found (i.e. on Google Fonts)
+  */
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+}
+#topLeftBox {
+	/*
+  absolute positioning means that it will have a fixed position
+  in relation to the screen (as opposed to the webpage)
+  */
+  position: absolute;
+
+	background-color: rgb(254, 169, 0);
+	width: 200px;
+	height: 200px;
+
+  /*
+  here we define where the box should live,
+  how far (in pixels) from the top of the window, and from the left of the window
+  */
+	top: 0px;
+	left: 0px;
+}
+#headerBox{
+  /*
+  fixed positioning means that it will stay to its given position no matter what happens to the window.
+  useful for logos or navigation
+  */
+	position:fixed;
+
+	background-color: rgba(50,50,50,0.5);
+	width: 100%;
+	height: 80px;
+	top: 0px;
+	left: 0px;
+	font-size: 0.9em;
+
+  /*
+  z-index is basically whether an element sits on top of or below another element.
+  an element with a high z-index will cover an another element with a z-index on the same location
+  */
+	z-index: 10;
+}
+#centerBox{
+	width: 100px;
+	background-color: green;
+	margin: 200px auto 20px;
+	padding: 30px 100px;
+	text-align: center;
+	font-size: 1.5em;
+}
+.navItem{
+  /*
+  the float attribute specifies whether an element should try to align
+  with the left part of the body, the right part of the body, or not take it into account
+  */
+	float: left;
+
+	margin-right: 10px;
+	text-decoration: none;
+}
+#innerBox{
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	background-color: red;
+	width: 40px;
+	height: 40px;
+}
+#middleBox{
+	background-color: aqua;
+	width: 100%;
+	height: 600px;
+}
+.rightSideBox{
+	float: right;
+	background-color: blue;
+	width: 50px;
+	height: 150px;
+	margin: 200px 10px;
+}
+#bottomBox{
+	background-color: pink;
+	width: 75%;
+	height: 300px;
+	margin: 10px auto;
+}
+.roundBox{
+  /*
+  relative positioning means that the values given in the top, bottom, left and right attributes
+  will be understood by the browser relative to the element in which this element lives (in our case, #bottomBox)
+  */
+	position: relative;
+
+	top: 20px;
+	background-color: rgb(150,250,150);
+	margin: 20px 0 0 20px;
+	width: 100px;
+	height: 40px;
+	border: 4px solid yellow;
+	border-radius:25px;
+}
+.roundBox:hover{
+	background-color: blue;
+}
+
+
+/*
+the @media selector allows you to specify some HTML code that is only applied if the condition in the media is satisfied.
+in our case, this condition is whether the screen has a width of 600px or less
+a.k.a is it a tiny window or a mobile device?
+*/
+@media (max-width: 600px) {
+  .navItem {
+
+    /*
+    removing the float attribute essentially means that the links
+    now display in a column rather than in a row
+    */
+    float: none;
+    display: block;
+  }
+}
