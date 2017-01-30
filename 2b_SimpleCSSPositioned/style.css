@@ -95,9 +95,9 @@ body {
   /*
   relative positioning means that the values given in the top, bottom, left and right attributes
   will be understood by the browser relative to the element in which this element lives (in our case, #bottomBox)
+  or based on the the closest parent coordinate system
   */
 	position: relative;
-
 	top: 20px;
 	background-color: rgb(150,250,150);
 	margin: 20px 0 0 20px;
