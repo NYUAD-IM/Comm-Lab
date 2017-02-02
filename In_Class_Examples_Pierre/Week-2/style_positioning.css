@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  height: 1000px;
+  font-family: 'Open Sans';
+}
+
+.reactive{
+  font-size: 20px;
+  text-decoration: blink;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.second{
+  color: blue;
+}
+
+.reactive:hover{
+  color: red;
+}
+
+a:visited{
+  color: orange;
+}
+
+
+.one{
+  position:static;
+
+  top: 50px;
+  left: 20px;
+
+  background-color: red;
+  height: 300px;
+  width: 50%;
+}
+
+.two{
+  position: static;
+
+  right: 100px;
+
+  background-color: green;
+  height: 300px;
+  width: 50%;
+}
+
+.zwei{
+  position: static;
+  float: left;
+
+  background-color: black;
+  height: 100%;
+  width: 50%;
+}
+
+.dos{
+  position: relative;
+  float: right;
+
+  background-color: white;
+  height: 100%;
+  width: 50%;
+}
+
+.three{
+  position: static;
+  background-color: blue;
+  height: 300px;
+  width: 50%;
+}
+/* this is where i write the css for the mobile browsing */
+@media (max-width: 600px){
+  body{
+    background-color: yellow;
+  }
+
+  .one, .two, .three{
+    width: 100%;
+  }
+}
+
+.test{
+  background-color: #FFFF00;
+  margin-left: 20px;
+  margin-right: 100px;
+  padding: 20px;
+}
