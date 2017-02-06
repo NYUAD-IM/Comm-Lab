@@ -14,12 +14,12 @@ button_darker.addEventListener('click', function(){
   //similar to line 6, we find the element we want to affect
   var square_darker = document.getElementById("square_darker");
 
-  //now that we have the element we want to keep, we need to find the elements we want to have disappear
-  var other_squares = document.getElementsByClassName("squares");
+  //now that we have the element we want to keep, we need to find all of the elements
+  var all_squares = document.getElementsByClassName("squares");
 
-  //then, we use a for loop to go through all of these other elements
-  for(var i = 0; i < other_squares.length; i++){
-    other_squares[i].style.visibility = 'hidden';
+  //then, we use a for loop to go through all of the elements
+  for(var i = 0; i < all_squares.length; i++){
+    all_squares[i].style.visibility = 'hidden';
   }
 
   //so now that we got rid of all the squares, we need to force our specific square to re-appear.
@@ -34,15 +34,14 @@ button_dark.addEventListener('click', function(){
 
   var square_dark = document.getElementById("square_dark");
 
-  var other_squares = document.getElementsByClassName("squares");
+  var all_squares = document.getElementsByClassName("squares");
 
-  for(var i = 0; i < other_squares.length; i++){
-    other_squares[i].style.visibility = 'hidden';
+  for(var i = 0; i < all_squares.length; i++){
+    all_squares[i].style.visibility = 'hidden';
   }
 
   square_dark.style.visibility = 'visible';
 });
-
 
 //for the light button
 var button_light = document.getElementById("light");
@@ -50,15 +49,14 @@ button_light.addEventListener('click', function(){
 
   var square_light = document.getElementById("square_light");
 
-  var other_squares = document.getElementsByClassName("squares");
+  var all_squares = document.getElementsByClassName("squares");
 
-  for(var i = 0; i < other_squares.length; i++){
-    other_squares[i].style.visibility = 'hidden';
+  for(var i = 0; i < all_squares.length; i++){
+    all_squares[i].style.visibility = 'hidden';
   }
-
+  
   square_light.style.visibility = 'visible';
 });
-
 
 //for the lighter button
 var button_lighter = document.getElementById("lighter");
@@ -66,10 +64,10 @@ button_lighter.addEventListener('click', function(){
 
   var square_lighter = document.getElementById("square_lighter");
 
-  var other_squares = document.getElementsByClassName("squares");
+  var all_squares = document.getElementsByClassName("squares");
 
-  for(var i = 0; i < other_squares.length; i++){
-    other_squares[i].style.visibility = 'hidden';
+  for(var i = 0; i < all_squares.length; i++){
+    all_squares[i].style.visibility = 'hidden';
   }
 
   square_lighter.style.visibility = 'visible';
