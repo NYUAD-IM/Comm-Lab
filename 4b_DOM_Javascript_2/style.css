@@ -1,36 +1,36 @@
 .container{
-  width: 60%;
-  height: 100%;
-  margin: auto;
-  text-align: center;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
 }
 
 .buttons{
-  float: left;
-  color: purple;
-  margin-left: 15%;
-  margin-bottom: 10%;
+	float: left;
+	color: purple;
+	margin-left: 15%;
+	margin-bottom: 10%;
 }
 
 .squares{
-  float: left;
-  width: 25%;
-  height: 200px;
-  margin: auto;
+	float: left;
+	width: 25%;
+	height: 200px;
+	margin: auto;
 }
 
 #square_darker{
-  background-color: rgb(70, 70, 70);
+	background-color: rgb(70, 70, 70);
 }
 
 #square_dark{
-  background-color: rgb(120, 120, 120);
+	background-color: rgb(120, 120, 120);
 }
 
 #square_light{
-  background-color: rgb(170, 170, 170);
+	background-color: rgb(170, 170, 170);
 }
 
 #square_lighter{
-  background-color: rgb(210, 210, 210);
+	background-color: rgb(210, 210, 210);
 }

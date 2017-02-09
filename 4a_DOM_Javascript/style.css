@@ -1,21 +1,21 @@
 .container{
-  width: 60%;
-  height: 100%;
-  margin: auto;
-  text-align: center;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
 }
 
 .buttons{
-  float: left;
-  color: purple;
-  margin-left: 25%;
-  margin-right: 25%;
+	float: left;
+	color: purple;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .square{
-  float: left;
-  width: 40%;
-  height: 300px;
-  margin: 20%;
-  background-color: rgb(70, 70, 70);
+	float: left;
+	width: 40%;
+	height: 300px;
+	margin: 20%;
+	background-color: rgb(70, 70, 70);
 }
