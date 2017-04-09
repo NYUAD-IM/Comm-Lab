@@ -16,14 +16,18 @@ paper.setup(canvas);
 paper.project.importSVG('abstract.svg', function(item, origin){
   myImage = item;
 
+
   rect = myImage.children.rect;
+
+  console.log(rect);
+
   circle_red = myImage.children.circles.children.red;
   circle_yellow = myImage.children.circles.children.yellow;
 
   rect.onMouseDown = function(){
     console.log('clicked rectangle');
 
-    rect.style.fillColor = '#349432';
+    rect.style.fillColor = new paper.Color(1, 0, 0);
   };
 
   circle_red.onMouseDown = function(){

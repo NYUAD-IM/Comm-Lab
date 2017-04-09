@@ -16,7 +16,7 @@ canvas.style.height = '100%';
 paper.setup(canvas);
 
 //now, we actually import the SVG. in our case, we import the file called jade-belt.svg
-paper.project.importSVG('jade-belt.svg', function(item, origin){
+paper.project.importSVG('abstract.svg', function(item, origin){
 
   //everything happening within the brackets between line 19 and line 31
   //are within the callback function, once jade-belt.svg is actually loaded (because it takes some time!)
