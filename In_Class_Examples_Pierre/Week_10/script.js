@@ -1,3 +1,8 @@
+//--------------------------------------------------------
+// ALL THE THINGS YOU CAN DO WITH VIDEOS CAN BE FOUND HERE
+// https://www.w3schools.com/TAgs/ref_av_dom.asp
+//--------------------------------------------------------
+
 window.addEventListener('load', function(){
   var theVideo = document.getElementById('vid');
 
