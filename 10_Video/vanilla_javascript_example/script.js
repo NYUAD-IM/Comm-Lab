@@ -7,14 +7,11 @@ window.addEventListener('load', function(){
 	theVideo = document.getElementById("prophecy");
 	console.log(theVideo);
 
-	
-
-
 	//first event listener: it fires whenever the playback position of the video changes
 	theVideo.ontimeupdate = function(){
 
 		//we write the current time of our video, by accessing the currentTime video
-		console.log("duration",theVideo.currentTime);
+		console.log("duration", theVideo.currentTime);
 
 		//if we're past a certain point, we display something to the webpage!
 		if(theVideo.currentTime >= 3.5)
@@ -26,7 +23,7 @@ window.addEventListener('load', function(){
 		theVideo.src = 'media/albloom.mp4';
 		theVideo.play();
 		theVideo.loop = true;
-	}
+	};
 });
 
 //and we play it!

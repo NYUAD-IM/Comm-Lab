@@ -31,9 +31,9 @@ $(document).ready(function(){
 		$('body').append('<div class="specialBox">FUNKY!!!!</div>');
 	});
 
-	// myVideo.cue(6, function(){
-	// 	$('#info').html('Are you still listening???');
-	// });
+	myVideo.cue(14, function(){
+		$('#info').html('Are you still listening???');
+	});
 
 	myVideo.cue(16, function(){
 		myVideo.pause();
@@ -41,16 +41,14 @@ $(document).ready(function(){
 		myVideoTwo.play();
 	});
 
-
 	myVideoTwo.cue(54, function(){
 		myVideoTwo.pause();
 	});
 
 	//Use '.code' to make a events happen at a specific start and end time
-	
 	myVideo.code({
 		start: 4,
-		end: 7,
+		end: 10,
 		onStart: function(){
 			$('#info').html('We hit 4 seconds...');
 		},
@@ -71,7 +69,6 @@ $(document).ready(function(){
 		//console.log(myVideo.currentTime());
 		$('body').append("<div class='updatingDiv'>UPDATING!UPDATING!UPDATING</div>");
 	});
-
 
 	/*******************************/
 	//Set some button event listeners
