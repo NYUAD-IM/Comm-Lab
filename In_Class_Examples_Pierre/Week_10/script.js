@@ -3,12 +3,12 @@
 // https://www.w3schools.com/TAgs/ref_av_dom.asp
 //--------------------------------------------------------
 
-window.addEventListener('load', function(){
-  var theVideo = document.getElementById('vid');
+window.addEventListener('load', () => {
+  let theVideo = document.getElementById('vid');
 
   // theVideo.play();
 
-  theVideo.ontimeupdate = function(){
+  theVideo.ontimeupdate = () => {
     console.log('current time is: '+theVideo.currentTime);
 
     if(theVideo.currentTime > 7){

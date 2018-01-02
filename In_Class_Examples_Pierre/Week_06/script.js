@@ -1,25 +1,25 @@
-var myAudio;
+let myAudio;
 
-function playMyAudio(){
+playMyAudio = () => {
   myAudio = document.getElementById('player');
 
   myAudio.play();
 }
 
-function adjustVolume(value){
+adjustVolume (value) =>{
   console.log(value);
   myAudio.volume = value;
 }
 
 //
-// function setup(){
+// setup = () => {
 //   console.log('this runs once');
 //
 //   createCanvas(windowWidth, windowHeight);
 //   background(250, 79, 63);
 // }
 //
-// function draw(){
+// draw = () => {
 //   console.log('this runs for ever');
 //   background(250, 79, 63, 10);
 //

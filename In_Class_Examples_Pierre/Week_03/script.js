@@ -2,7 +2,7 @@
 
 //this is how you declare a function
 //here we give it the name changeColorToBlue
-function changeColorToBlue(){
+changeColorToBlue = () => {
   //everything we want to happen when that function is called
   //will have to happen between the opened and closed curly brackets
   console.log("i want to change things to blue");
@@ -13,18 +13,18 @@ changeColorToBlue();
 
 //because we have included jQuery in our HTML page (line 31),
 //we can access the $ sign, which give us a way to access the DOM (Document Object Model)
-var myDiv2 = $("#myDiv2"); //this is equivalent to saying "document.getElementById('myDiv2')" and we store that in a variable called myDiv2
+let myDiv2 = $("#myDiv2"); //this is equivalent to saying "document.getElementById('myDiv2')" and we store that in a variable called myDiv2
 
 //just to make sure that jQuery works, we print the content of the variable myDiv2 to make sure we have an HTML element
 console.log(myDiv2);
 
 //here, we use jquery to add an event listener to the whole document
 //that event happens whenever the document is 'ready', i.e. when all the HTML elements have loaded
-$(document).ready(function(){
+$(document).ready(() =>{
 
   //once we are sure that all the HTML elements have loaded, we add an event listener to the body
   //it will listen for any 'keypress'
-  $("body").keypress(function(){
+  $("body").keypress(() =>{
 
     //here, we tell it what to do when it actually hears the event 'keypress' i.e. when the user presses a key
     toggleBetweenImages(); //we call our function that we defined on line 54
@@ -32,20 +32,20 @@ $(document).ready(function(){
 });
 
 //we declare variables to specify where our images are located
-var img1 = "file:///Users/Pierre/Documents/Teaching/_NYUAD/_CommLab/_Repo/In_Class_Examples_Pierre/Week_03/img1.png";
-var img2 = "file:///Users/Pierre/Documents/Teaching/_NYUAD/_CommLab/_Repo/In_Class_Examples_Pierre/Week_03/img2.png";
+let img1 = "./img1.png";
+let img2 = "./img2.png";
 
 //this is our toggleBetweenImages function. what it does is:
 //1. fade out the current image
 //2. when it is invisible, change the src attribute of the image, so that it links to another image
 //3. fade the image back in
-function toggleBetweenImages(){
+toggleBetweenImages = () => {
 
   //first, we need to grab our <img> tag from the html document and we store it in a variable called myImage
-  var myImage = document.getElementById("mySlideshow").style.opacity = 0;
+  let myImage = document.getElementById("mySlideshow").style.opacity = 0;
 
   //because it takes 0.3seconds to fade out, we use setTimeout to delay the following set of instructions by 0.3s
-  setTimeout(function(){
+  setTimeout(() => {
     //let's compare the src attribute of our image with the location of img1. are they the same?
     if(myImage.src == img1){
       //if they are the same, then the code on lines 51-55 executes (between the curly brackets, basically)

@@ -1,5 +1,5 @@
-var audioPlayer = document.getElementById('player');
+let audioPlayer = document.getElementById('player');
 
-document.body.addEventListener('click', function(){
+document.body.addEventListener('click', () => {
   audioPlayer.play();
 });

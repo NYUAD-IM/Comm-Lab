@@ -1,7 +1,7 @@
 //first, we declare two variables, to keep track of our canvas
-var canvas;
+let canvas;
 //and to keep track of our image
-var myImage;
+let myImage;
 
 //here, we grab our <canvas> element from the index.html
 canvas = document.getElementById('myCanvas');
@@ -16,7 +16,7 @@ canvas.style.height = '100%';
 paper.setup(canvas);
 
 //now, we actually import the SVG. in our case, we import the file called jade-belt.svg
-paper.project.importSVG('abstract.svg', function(item, origin){
+paper.project.importSVG('abstract.svg', (item, origin) => {
 
   //everything happening within the brackets between line 19 and line 31
   //are within the callback function, once jade-belt.svg is actually loaded (because it takes some time!)
@@ -32,7 +32,7 @@ paper.project.importSVG('abstract.svg', function(item, origin){
   //myImage has some children, among which there is 'belt'. this is the layer we've named inside Illustrator
   //'belt' also has at least one children, which are the individual graphic elements nested under it (e.g. lines, rectangles, etc.)
   //and each of these have an attribute called 'onMouseMove', which you can set to a function
-  myImage.children.belt.children[0].onMouseMove = function(){
+  myImage.children.belt.children[0].onMouseMove = () =>{
 
     //in our case we define a function where it's going to print a message to the console
     console.log('mouse moving on top of the belt layer!');

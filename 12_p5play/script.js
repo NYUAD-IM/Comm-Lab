@@ -1,12 +1,12 @@
-var ball;
-var ball2;
+let ball;
+let ball2;
 
-function preload(){
+preload = () =>{
 }
 
 
-function setup(){
-var cnv = createCanvas(windowWidth, windowHeight);
+setup = () =>{
+let cnv = createCanvas(windowWidth, windowHeight);
 // cnv.position(0, 0);
 
  ball = createSprite(200, 200, 200, height-200);
@@ -32,14 +32,14 @@ ball.debug = true;
 }
 
 
-function draw(){
+draw = () =>{
   background(255, 255, 255);
 
   ball.attractionPoint(.05, mouseX, mouseY);
   ball2.attractionPoint(.1, mouseX, mouseY);
 
 
-ball.bounce(ball2);
+  ball.bounce(ball2);
 
   drawSprites();
 

@@ -1,4 +1,4 @@
-function myLibraryFunction(argument1, argument2){
+myLibraryFunction = (argument1, argument2) => {
   console.log("this is my first argument:"+argument1);
   console.log("this is my second argument:"+argument2);
 }

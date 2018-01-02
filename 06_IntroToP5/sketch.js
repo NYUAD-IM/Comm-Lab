@@ -3,7 +3,7 @@
 
 // the setup function is called once, when the webpage is loaded.
 // it's useful to set the initial layout of your sketch (initial positions, initial colors, etc.)
-function setup(){
+setup = () =>{
   console.log('this is called once!');
 
   // this line allows us to create a HTML <canvas> element, on which we can draw.
@@ -17,6 +17,6 @@ function setup(){
 
 // the draw function is called over and over again.
 // think of it as a camera that plays an image, after an image, after an image, to create the illusion of motion (a movie)
-function draw(){
+draw = () => {
   console.log('this is called over and over!');
 }

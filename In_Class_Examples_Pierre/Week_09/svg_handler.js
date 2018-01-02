@@ -1,9 +1,9 @@
-var canvas;
+let canvas;
 
-var myImage;
-var rect;
-var circle_red;
-var circle_yellow;
+let myImage;
+let rect;
+let circle_red;
+let circle_yellow;
 
 canvas = document.getElementById('myCanvas');
 
@@ -13,7 +13,7 @@ canvas.style.height = '100%';
 
 paper.setup(canvas);
 
-paper.project.importSVG('abstract.svg', function(item, origin){
+paper.project.importSVG('abstract.svg', (item, origin) =>{
   myImage = item;
 
 
@@ -24,19 +24,19 @@ paper.project.importSVG('abstract.svg', function(item, origin){
   circle_red = myImage.children.circles.children.red;
   circle_yellow = myImage.children.circles.children.yellow;
 
-  rect.onMouseDown = function(){
+  rect.onMouseDown = () =>{
     console.log('clicked rectangle');
 
     rect.style.fillColor = new paper.Color(1, 0, 0);
   };
 
-  circle_red.onMouseDown = function(){
+  circle_red.onMouseDown = () =>{
     console.log('clicked red circle!');
 
     circle_red.opacity = 0;
   };
 
-  circle_yellow.onMouseDown = function(){
+  circle_yellow.onMouseDown = () =>{
     console.log('clicked yellow circle:', circle_yellow.shadowOffset);
 
     circle_yellow.shadowColor = 'black';
