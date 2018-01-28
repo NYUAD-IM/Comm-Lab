@@ -19,18 +19,18 @@
 	margin: auto;
 }
 
-#square_darker{
+.square_darker{
 	background-color: rgb(70, 70, 70);
 }
 
-#square_dark{
+.square_dark{
 	background-color: rgb(120, 120, 120);
 }
 
-#square_light{
+.square_light{
 	background-color: rgb(170, 170, 170);
 }
 
-#square_lighter{
+.square_lighter{
 	background-color: rgb(210, 210, 210);
 }
