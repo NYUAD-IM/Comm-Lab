@@ -1,0 +1,55 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+	font-size: 16px;
+}
+button{
+	font-family: 'Kanit', sans-serif;	
+	width: 25%;
+	padding: 20px 0;
+	font-size: 1em;
+	margin: 0 3.8%;
+}
+
+.main-container{
+	width: 80%;
+	max-width: 1080px;
+	margin: 10px auto;
+	background-color: aqua;  
+}
+.header-container{
+	text-align: center;
+	font-size: 4em;
+}
+
+.button-container{
+	width: 80%;
+	margin: 20px auto;
+}
+
+iframe{
+	display: block;
+	margin: 10px auto;
+}
+
+.text-container{
+	width: 60%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+@media (max-width: 960px) {
+	button{
+		font-size: 12px;
+		width: 20%;
+	}
+}
+
+@media (max-width: 720px) {
+	iframe{
+		width: 70%;
+	}
+}
+
+
