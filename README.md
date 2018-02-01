@@ -1,5 +1,6 @@
 # Comm Lab Code Examples
-Repository for NYUAD IM-UH 10111
+Repository for NYUAD IM-UH 10111  
+Official Course Site: [commlab.yuad.im](http://commlab.nyuad.im/)
 
 # Course Instructors
 Instructor: Pierre Depaz  
