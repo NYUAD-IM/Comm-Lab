@@ -20,7 +20,7 @@ button_darker.addEventListener('click', () => {
 	//then, we use a for loop to go through all of the elements
 	// ---- ES6 ----- the new for loop allows you to loop over array elements directly like this
 	// ---- ES6 ----- we are no longer iterating over a number (i), but over array elements (i.e. squares)
-	for(square of all_squares){
+	for(let square of all_squares){
 		square.style.visibility = 'hidden';
 	}
 
