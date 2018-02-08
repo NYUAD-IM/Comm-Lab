@@ -8,6 +8,9 @@ specialText.style.display = "block";
 //Cast Button Event Listener
 var castButton = document.getElementById("cast-button");
 var doSomething = function(){
+
+	document.location.href = "alt_page.html";
+
 	console.log("You pressed me?");
 	var allText = document.getElementsByClassName("text-container");
 	for (text of allText){
@@ -18,7 +21,9 @@ var doSomething = function(){
 
 	var iFrameVideo = document.getElementById('the-video');
 	iFrameVideo.style.display = "block";
+
 };
+
 castButton.addEventListener("click", doSomething);
 
 //Reviews Button Event Listener
