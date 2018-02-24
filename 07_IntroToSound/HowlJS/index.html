@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>CommLab - HowlJS</title>
+</head>
+<body>
+
+  <h1>click to hear wise words</h1>
+  <h2>courtesy of al bloom and <a href="https://howlerjs.com/">HowlJS</a></h2>
+
+
+  <!-- we can add onclick events directly in the HTML tags! -->
+  <button onclick="playSound()">play</button>
+  <br />
+
+  <!-- this is how you can have a slider -->
+  <!-- you must declare a <input /> tag with the type="range"-->
+  <!-- the other attributes are:
+      min (lower limit),
+      max (upper limit),
+      value (the value it starts with),
+      step (how it increments),
+      oninput (the function that should be called when the user drags the slider) -->
+  volume: <input type='range' min='0' max='1' value='0.5' step='0.01' oninput="adjustVolume(value)" /><br />
+  <br />
+
+  <!-- this one is very similar -->
+  rate: <input type='range' min='0.5' max='4' value='1' step='0.01' oninput="adjustRate(value)" /><br />
+  <br />
+  <button onclick="fadeSound()">fade</button>
+
+<!-- first, we need to include the HowlJS library -->
+<script src="howler.min.js"></script>
+
+<!-- only then we can include our script -->
+<script src="howl-player.js"></script>
+</body>
