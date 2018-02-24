@@ -26,6 +26,11 @@
   <!-- this one is very similar -->
   rate: <input type='range' min='0.5' max='4' value='1' step='0.01' oninput="adjustRate(value)" /><br />
   <br />
+
+  <!-- for this one, we need an idea so that we can set the `max` attribute to be the exact length of the audio file -->
+  playback position: <input id="playback-position-slider" type='range' min='0' max='4' value='0' step='0.01' oninput="setPosition(value)" /><br />
+  <br />
+
   <button onclick="fadeSound()">fade</button>
 
 <!-- first, we need to include the HowlJS library -->
