@@ -1,6 +1,8 @@
-let mySound
+let mySound //this is a global variable (permanent)
+
 
 function init(){
+  //temporary variable
   mySound = new Howl({ src: 'technology.mp4'})
 
   mySound.play()
