@@ -1,5 +1,6 @@
 let audioPlayer = document.getElementById('player');
 
-document.body.addEventListener('click', () => {
+//Click anywhere to trigger the sound
+window.addEventListener('click', () => {
   audioPlayer.play();
 });
