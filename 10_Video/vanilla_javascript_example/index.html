@@ -7,14 +7,16 @@
 
 	</head>
 	<body>
-		<video id="prophecy" width="600" height="400" controls>
-			<source src="media/albloom-full.mp4" type="video/mp4">
-			Sorry, it seems your browser doesn't support .mp4
-		</video>
-		<button id="theButton" onclick="playVideo()">let's go</button>
 		<div id="reaction">
 
 		</div>
+		<video id="prophecy" width="600" height="400">
+			<source src="media/albloom-full.mov" type="video/mov">
+			<source src="media/albloom-full.mp4" type="video/mp4">
+			Sorry, it seems your browser doesn't support .mp4 or .mov
+		</video>
+		<button id="theButton" onclick="playVideo()">let's go</button>
+		<iframe style="display: none;" id="youtubestuff" width="560" height="315" src="https://www.youtube.com/embed/NAc-yGTgXcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<script src="script.js"></script>
 	</body>
 </html>
