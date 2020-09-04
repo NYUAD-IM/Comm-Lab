@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.block {
+    height: 300px;
+    width: 90%;
+    margin: 5%;
+    border: 2px solid black;
+}
+
+.welcome{
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+}
