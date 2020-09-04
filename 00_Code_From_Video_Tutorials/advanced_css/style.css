@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: red;
+  width: 500px;
+  height: 100px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.animated {
+  /* animation: bounce 2s infinite alternate; */
+  animation-name: bounce;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .main{
+    width: 100px;
+    height: 500px;
+
+  }
+
+}
+
+.otherClass{
+  background-color: green;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .otherClass{
+    background-color: cyan;
+  }
+
+} */
+
+
+
+/* .container{
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+/* .inside {
+  display: inline-block;
+  width: 1200px;
+  height: 100px;
+  text-align: center;
+  font-size: 48px;
+  border: 2px solid black;
+} */
+
+/* .first {
+  order: 2;
+}
+
+.second {
+  order: 1;
+}
+
+.third {
+  order: 3;
+}
+
+.fourth {
+  order: 4;
+} */
+/*
+div {
+  height: 200px;
+  transition: 1s all ease-in;
+}
+
+.first {
+  background-color: blue;
+}
+
+.first p{
+  color: white;
+}
+
+.second {
+  background-color: orange;
+}
+
+.second p {
+  color: green;
+}
+
+.first, .second {
+  padding: 50px;
+}
+
+.border{
+  border: 2px solid black;
+}
+
+.left{
+  float: left;
+}
+
+.right {
+  float: right;
+} */

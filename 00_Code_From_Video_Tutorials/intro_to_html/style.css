@@ -1,0 +1,22 @@
+img {
+  width: 200px;
+}
+
+a {
+  display: block;
+  width: 100%;
+}
+
+.link-to-tv-buddha {
+  color: orange;
+}
+
+.fact-fun {
+  width: 300px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  padding: 5px;
+  border: 1px solid black;
+}
