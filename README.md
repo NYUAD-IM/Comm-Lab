@@ -1,19 +1,6 @@
 # Comm Lab Code Examples
 Repository for NYUAD IM-UH 10111  
-Official Course Site: [commlab.yuad.im](http://commlab.nyuad.im/)
-
-# Course Instructors
-Instructor: Pierre Depaz  
-Email: pierre.depaz@nyu.edu  
-Office Hours: Open Door Policy  
-Class Time: Tuesday 11:50AM - 2:30PM + Thursday 11:50AM - 1:05PM  
-Classroom: Art Center Rm 153
-
-Instructor: Craig Protzel  
-Email: craig.protzel@nyu.edu  
-Office Hours: Open Door Policy  
-Class Time: Monday 2:40PM - 5:20PM + Wednesday 4:05PM - 5:20PM  
-Classroom: Art Center Rm 153
+Official Course Site: [commlab.nyuadim.com](http://commlab.nyuadim.com/)
 
 ---
 
