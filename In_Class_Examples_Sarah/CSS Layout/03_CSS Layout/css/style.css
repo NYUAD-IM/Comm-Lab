@@ -1,0 +1,47 @@
+
+body {
+	font-family: Arial;
+}
+
+p {
+	font-family: "Times New Roman";
+	font-size: 14pt;
+}
+
+h1 {
+	font-size: 20pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: blue;
+	color: white;
+}
+
+.blue {
+	color: blue;
+}
+
+header {
+	background-color: beige;
+	font-size: 2em;
+}
+
+footer {
+	background-color: beige;
+}
+
+#cast {
+	background-color: orange;
+}
+
+
+
+
+
+
+
+

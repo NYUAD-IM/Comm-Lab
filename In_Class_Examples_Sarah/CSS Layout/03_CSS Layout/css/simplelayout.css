@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+
+.box {
+	width: 200px;
+	height: 200px;
+	/*margin: 10px;*/
+}
+
+.boxstick {
+	margin: 0px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+/*.green {
+	background-color: darkgreen;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}*/
+
+.red {
+	background-color: red;
+	position: sticky;
+	top: 0px;
+}
+
+#topsection {
+	background-color: gray;
+	width: 100%;
+	position: relative;
+	margin-top: 40px;
+}
+
+.orange {
+	background-color: orange;
+	position: absolute;
+	right:0px;
+	top: 0px;
+}
+
+
+/*simple layout more below*/
+
+header {
+	width: 100%;
+	height: 140px;
+	background-color: #dddddd;
+	position: relative;	
+}
+
+.mainLogo {
+	width: 100px;
+	height: 100px;
+	background-color: #222222;
+	position: relative;
+	top: 15px;
+	left: 20px;
+
+}
+
+.mainTitle {
+	width: 70%;
+	height: 100px;
+	background-color: pink;
+	position: absolute;
+	left: 140px;
+	top: 15px;
+	margin: 0px;
+	font-size: 5em;
+
+}
+
+#logoHolder {
+	width: 200px;
+	background-color: yellow;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+
+}
+
+.logoBox {
+	width: 60px;
+	height: 60px;
+	background-color: red;
+	display: inline-block;
+
+}
+
+
+
+
+
+

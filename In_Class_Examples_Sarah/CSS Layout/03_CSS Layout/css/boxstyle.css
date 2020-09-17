@@ -1,0 +1,38 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background-color: pink;
+	/*padding: 20px 50px 30px 55px;*/
+	/*padding: 40px 10px;*/
+	/*TRBL - trouble
+	Top, Bottom, Left, Right
+	Only two values, first is TB second is LR*/
+	/*margin: 40px;*/
+	/*border-width: 2pt;
+	border-style: solid;*/
+	text-align: center;
+	width: 400px;
+	height: 300px;
+
+}
+
+p {
+	background-color: lightblue;
+	/*margin: 40px;*/
+	text-align: center;
+	width: 300px;
+	height: 40px;
+
+}
+
+a {
+	background-color: orange;
+	width: 400px;
+	height: 220px;
+	display: inline-block;
+}
+

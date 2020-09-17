@@ -1,0 +1,70 @@
+
+
+body {
+	font-family: Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-color: #dc6900; /*orange*/
+	position: relative;
+	top: 20px;
+	height: 167px;
+}
+
+#siteTitle {
+	width: 800px;
+	margin: 0px auto; /*this centers the box within the header box*/
+	color: white;
+	position: relative;
+	top: 50px;
+	text-align: center; /*this centers the text itself within the siteTitle box*/
+	font-size: 2em;
+}
+
+
+nav {
+	width: 100%;
+	min-width: 1100px;
+	background-color: #7c501a; /*brown*/
+	position: relative;
+	top: 20px;
+	display: block;
+	height: 30px;
+}
+
+.navbox {
+	color: #7c501a;
+	text-align: center;
+	background-color: white ;
+	width: 15%;
+	display: inline-block;
+	line-height: 45px;
+	margin: 0 15px;
+	text-decoration: none;
+}
+
+.navbox:hover {
+	background-color: #eb8c00;
+	color: white;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.footerText {
+	line-height: 30px;
+	margin: 0px;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 20px;
+	background-color: #7c501a;
+	color: white;
+	text-align: center;
+}

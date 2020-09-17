@@ -1,0 +1,77 @@
+body {
+	font-family: Arial;
+	margin:0;
+	padding:0;
+	/*overscroll-behavior: none;*/
+}
+
+.holder-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: gray;
+	/*margin: 0 auto;*/
+
+}
+
+.bio {
+	width: 200px;
+	min-width: 200px;
+	background-color:red;
+	padding: 10px;
+	margin:5px;
+}
+
+.bio-pic {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	margin: 5px auto;
+}
+
+.bio-pic:hover {
+	width: 120px;
+	width: 120px;
+}
+
+.bio-text {
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.scrollText {
+	width: 600px;
+	height: 100px;
+	margin:0 auto;
+	margin-bottom: 50px;
+	margin-top: 40px;
+	background-color: gray;
+	overflow: scroll;
+}
+
+#grinchHolder {
+	position: relative;
+	height: 220px;
+	background-color: pink;
+}
+
+.imageHere {
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 40px;
+	width: 500px;
+	height: 200px;
+	background-image: url("images/grinch.jpg");
+}
+
+.imageHere:hover {
+	height: 400px;
+}
+
+
+
+
+
+
+
