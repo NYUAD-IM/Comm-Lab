@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+	/*font-family: Arial;*/
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -94,6 +95,39 @@ header {
 	display: inline-block;
 
 }
+
+/*navigation added*/
+
+nav {
+	width: 100%;
+	background-color: #335fd3;
+	height: 40px;
+	position: relative;
+}
+
+nav li {
+	color: #335fd3;
+	background-color: white;
+	width: 15%;
+	min-width: 150px;
+	/*height: 40px;*/
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	float: right;
+	margin: 0px 15px;
+}
+
+nav li:hover {
+	background-color: lightgray;
+	color: black;
+}
+
+.clear {
+	clear: both;
+}
+
+
 
 
 
