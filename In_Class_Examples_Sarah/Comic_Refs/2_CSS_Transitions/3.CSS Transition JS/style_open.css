@@ -1,0 +1,63 @@
+#container {
+	width: 1000px;
+	height: 350px;
+	margin: 0 auto;
+	font-family: Arial;
+	line-height: 30px;
+}
+
+.myElement{
+	background: blue;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0); /* value from 0 to 255*/
+	float: left;
+	text-align: center;
+	margin:5px;
+	width: 100px;
+	height:100px;
+	transition: all 0.4s linear 0.1s;
+}
+
+
+/*.myElement:focus {
+	width: 300px;
+	height: 300px;
+	color: black;
+}*/
+
+.faces1 {
+	background-image:url(people.jpg);
+	background-position: -80px -50px;
+}
+.faces2 {
+	background-image:url(people.jpg);
+	background-position: -240px -130px;
+}
+.faces3 {
+	background-image:url(people.jpg);
+	background-position: 350px -250px;
+}
+.faces4 {
+	background-image:url(people.jpg);
+	background-position: -100px -280px;
+}
+
+#boxHolder {
+	width: 100%;
+}
+
+.boxCentered {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: red;
+	transform-origin: center center;
+	transition: all 0.4s linear 0.1s;
+}
+
+.boxCentered:hover {
+	transform: scale(1.5, 1.5);
+}
+
+
+

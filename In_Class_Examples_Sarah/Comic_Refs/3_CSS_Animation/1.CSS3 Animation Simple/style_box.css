@@ -1,0 +1,99 @@
+body {
+	font-family: Arial;
+}
+
+#wrapper {
+	background: #999999;
+	margin-top:100px;
+	height: 500px;
+	padding: 40px;
+}
+
+.box {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+ 	width: 100px;
+	height:100px;
+	background: green;
+}
+
+.blue {
+	background:blue;
+}
+
+/*animation sequence 1*/
+
+@keyframes makeRed {
+	from {
+		background: green;
+		font-size: 20px;
+	}
+	to {
+		background: red;
+		font-size: 100px;
+	}
+}
+
+@-webkit-keyframes makeRed {
+	from {
+		background: green;
+		font-size: 20px;
+	}
+	to {
+		background: red;
+		font-size: 100px;
+	}
+}
+
+.makeRed {
+	animation-name: makeRed;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-name: makeRed;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: forwards;
+
+}
+
+
+/*animation sequence 2*/
+
+@keyframes makeRed2 {
+	0% {
+		background: green;
+		
+	}
+	50% {
+		background: pink;
+	}
+	100% {
+		background: red;
+		transform: scaleX(2) scaleY(2);
+	}
+}
+
+@-webkit-keyframes makeRed2 {
+	0% {
+		background: green;
+	}
+	100% {
+		background: red;
+		transform: scaleX(2) scaleY(2);
+	}
+}
+
+
+.makeRed2 {
+	animation-name: makeRed2;
+	-webkit-animation-name: makeRed2;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+/*your animation sequence here*/
+
+

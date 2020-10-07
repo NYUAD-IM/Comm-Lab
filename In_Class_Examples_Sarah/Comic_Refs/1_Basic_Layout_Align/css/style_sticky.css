@@ -1,0 +1,49 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+main {
+	background-color: beige;
+	width: 1000px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.box-sticky {
+	width: 200px;
+	line-height: 200px;
+	background-color: pink;
+	text-align: center;
+	margin-top: 100vh;
+	position: sticky;
+	top: 40vh;
+}
+
+.just-box {
+	width: 180px;
+	/*height: 200px;*/
+	margin-top: 40vh;
+}
+
+.one {
+
+}
+.two {
+	margin-left: 200px;
+}
+.three {
+	margin-left: 400px;
+}
+.four {
+	margin-left: 600px;
+}
+.five {
+	margin-left: 800px;
+}
+.six {
+	margin-left: 1000px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<title>Mouse Position and Scrolling</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+</head>
+
+<!-- <body onmousemove="showClientMousePosition()"> -->
+<body onscroll="showScrollPosition()">
+
+	<div class="fixed-box">
+		<p>Scroll Position</p>
+    	<p id="scroll-x">0</p>
+    	<p id="scroll-y">0</p>
+  	</div>	
+
+	<div class="container">
+		<div id="siteTitle">Faust</div>
+		<div class="aBox" onmousemove = "showOffsetMousePosition()">
+			<img src="images/faust01.jpg">
+		</div>
+
+		<div class="aBox">
+			<p>Client Mouse Position</p>
+			<p id="client-x"></p>
+			<p id="client-y"></p>
+			<br>
+			<p>Offset Mouse Position</p>
+			<p id="offset-x"></p>
+			<p id="offset-y"></p>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<div id="siteTitle">Faust</div>
+		<div class="aBox">
+			<img src="images/faust02.jpg">
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="siteTitle">Faust</div>
+		<div class="aBox">
+			<img src="images/faust03.jpg">
+		</div>
+	</div>
+
+
+
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: lightgray;
+}
+
+div {
+  margin: 30px;
+}
+
+#really-large-div {
+  width: 3000px;
+  height: 3000px;
+  background-color: #FF0;
+}
+
+.fixed-box {
+  position: fixed;
+  right: 15%;
+  bottom: 15%;
+  width: 200px;
+  height: 100px;
+}

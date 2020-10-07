@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 5000px;
+  background-color:red;
+}
+.overHere {
+	position: relative;
+	left: 2500px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to scroll the document window to 500 pixels horizontally.</p>
+
+<button onclick="moveWin()">Click me to scroll horizontally!</button><br><br>
+
+<p class="overHere">I'm way over here.</p>
+
+<script>
+function moveWin() {
+  window.scrollTo(2500, 0);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.container {
+	background-color: beige;
+	height: 100vh;
+	width: 100%;
+}
+
+.inner-container {
+	/*background-color: red;*/
+	border-style: dashed;
+	border-width: 1px;
+	border-color: black;
+	width: 80%;
+	min-width: 1000px;
+	height: 90vh;
+	min-height: 400px;
+	transform: translateY(4vh);
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-side {
+	height: 50vh;
+	min-height: 300px;
+	margin: 0 30px;
+}
+
+.img-side-emp {
+	height: 60vh;
+	min-height: 300px;
+	margin: 0 30px;
+	border: black solid 2px;
+}
+
+img {
+	max-width: 100% !important; 
+	max-height: 100% !important;
+}
+

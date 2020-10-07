@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="style_open.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<title>Transitions Open Boxes</title>
+	
+</head>
+
+<body>
+	
+	<div id="container">
+	
+
+	<a href="#" class="myElement faces1" onclick="addWidth(this)">Oh Me!</a>
+	<a href="#" class="myElement faces2" onclick="addWidth(this)">Oh My!</a>
+	<a href="#" class="myElement faces3" onclick="addWidth(this)">What have</a>	
+	<a href="#" class="myElement faces4" onclick="addWidth(this)">we here?</a>	
+	
+	</div> <!--end of container-->
+
+	<div id="boxHolder">
+		<div class="boxCentered"></div>
+	</div>
+
+	<script>
+		function addWidth(e) {
+			console.log("working");
+			e.style.width = "300px";
+			e.style.height = "300px";
+			// e.style.transform = "scale(2, 2)";
+		}
+	</script>
+
+</body>
+
+</html>

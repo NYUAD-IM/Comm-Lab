@@ -1,0 +1,22 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: lightgray;
+}
+
+div {
+  margin: 30px;
+}
+
+#color-box {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  background-color: #FF0;
+}

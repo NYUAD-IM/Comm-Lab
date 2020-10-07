@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+	<title>SetInterval Example</title>
+</head>
+
+<body>
+	<button onclick="startColors()">Start</button>
+	<button onclick="stopColors()">Stop</button>
+
+
+	<script type="text/javascript">
+
+		var on = false;
+		var colorChange;
+
+		function startColors() {
+			colorChange = setInterval(changeBackground, 1000)
+		}
+
+		function changeBackground() {
+			on = !on;
+
+			if (on) {
+				document.body.style.backgroundColor = "blue";
+			} else {
+				document.body.style.backgroundColor = "red";
+			}
+		}
+
+		function stopColors() {
+			clearInterval(colorChange);
+			document.body.style.backgroundColor = "white";
+		}
+
+	</script>
+</body>

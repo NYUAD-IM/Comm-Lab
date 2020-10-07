@@ -1,0 +1,43 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+#pageTitleAgain{
+	font-family: 'Special Elite', cursive;
+	font-size: 3em;
+	color: white;
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
+	z-index: 3;
+}
+
+
+#bgFill{
+	background-color: coral;
+}
+
+#big {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	/*background-color: coral;*/
+}
+.little1 {
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	background-color: pink;
+}
+
+
+
+

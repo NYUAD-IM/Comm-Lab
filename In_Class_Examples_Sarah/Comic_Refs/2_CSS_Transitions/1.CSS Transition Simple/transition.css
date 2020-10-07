@@ -1,0 +1,14 @@
+#mainContent {
+    background-color: #CC0000;
+	height: 300px;
+	width: 500px;
+	margin: 0 auto;
+    transition: background-color .5s ease-in, width .6s ease-out, height 2s ease-in;
+}
+
+#mainContent:hover {
+    background-color: #000000;
+    width: 800px;
+    height: 800px;		
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<title>Photo Array</title>
+</head>
+
+<body>
+	<p>Click to rotate through images.</p>
+	<p><button onclick="rotatePhoto()">Click For Alice</button></p>
+
+	<img id="photoSpot">
+
+	
+
+	<script>
+		var photoArray = ["alice01", "alice02", "alice03", "alice04", "alice05"];
+		var counter = 0;
+
+		function rotatePhoto() {
+			document.getElementById("photoSpot").src = "images/" + photoArray[counter] + ".jpg";
+			if (counter>=photoArray.length-1) {
+				counter = 0;
+			} else {
+				counter = counter + 1;
+			}
+		}
+
+	</script>
+
+
+</body>
+
+
+</html>

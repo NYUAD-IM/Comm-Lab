@@ -1,0 +1,39 @@
+
+body{
+	font-family: Arial;
+	background-color: darkorchid;
+	padding: 0;
+	margin: 0;
+}
+
+#box-fixed {
+	width: 300px;
+	height:300px;
+	background-color: red;
+	position: fixed;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-150px, -150px);
+	z-index: -4;
+/*	top: 50vh;
+	left: 50%;
+	transform: translate(-150px, -150px);
+	z-index: -4;*/
+}
+
+
+
+.other-box {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50vh;
+	transform: translateY(-100px);
+
+}
+
+.z-3 {
+	z-index:-5;
+}

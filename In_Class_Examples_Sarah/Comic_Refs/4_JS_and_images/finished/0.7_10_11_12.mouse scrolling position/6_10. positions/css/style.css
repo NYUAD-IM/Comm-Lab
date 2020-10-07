@@ -1,0 +1,38 @@
+body {
+	font-family: 'Merienda', Arial;
+}
+
+.container {
+	background-color: tomato;
+	height: 100vh;
+	width: 5000PX;
+}
+
+.aBox {
+	width: 400px;
+	margin: 30px auto;
+}
+
+img {
+	width: 400px;
+}
+
+.imgSpacing {
+	margin: 30 30px;
+}
+
+#siteTitle {
+	font-size: 60px;
+	text-align: center;
+	line-height: 85px;
+}
+
+.fixed-box {
+	width: 400px;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+}
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>IMA CommLab</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Have a look at 'script.js' file in 'js' folder -->
+  <script src="js/script.js" type="text/javascript"></script>
+
+</head>
+<body onmousemove=" showClientMousePosition() ">
+
+  <p>
+    Have a look at 'script.js' file in 'js' folder.
+    <br>
+    Open the Console window and check the results.
+  </p>
+
+  <div>
+    <p>event.clientX: <span id="client-x">0</span> px</p>
+    <p>event.clientY: <span id="client-y">0</span> px</p>
+  </div>
+
+  <div id="color-box" onmousemove=" showOffsetMousePosition() ">
+    <p>event.offsetX: <span id="offset-x">0</span> px</p>
+    <p>event.offsetY: <span id="offset-y">0</span> px</p>
+  </div>
+
+</body>
+</html>
