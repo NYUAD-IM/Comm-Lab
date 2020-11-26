@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+	<video id="vid" width="640">
+		<source src="styro.mp4" type="video/mp4">
+		Your browser does not support video.
+	</video>
+	<br>
+	<button onclick="playVideo()">Click to play</button>
+	<button onclick="pauseVideo()">Click to pause</button>
+	<p id="info"></p>
+
+	<script>
+
+	var vid = document.getElementById("vid");
+	var info = document.getElementById("info");
+
+	function playVideo() {
+		vid.play();
+	}
+
+	function pauseVideo() {
+		vid.pause()
+		info.innerHTML = "The current time is " + Math.round(vid.currentTime);
+	}
+
+	</script>
+</body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>Advanced Change Based on Current Time</title>
+</head>
+
+<body>
+	<video id="myVideo" height="500" controls>
+		<source src="video/drone01.mp4" type="video/mp4">
+	<video>
+
+	<script>
+	
+	var mainVideo = document.getElementById("myVideo");
+	var firstVideo = false;
+
+	var timer = setInterval(changeSource, 500); 	//every 500ms
+
+	function changeSource() {
+		if (mainVideo.currentTime >= 5) {
+			mainVideo.src = "video/drone03.mp4";
+			firstVideo = true;
+			mainVideo.play();	//need this here to keep video playing
+		} else if (mainVideo.currentTime >=3 && firstVideo === true) {
+			mainVideo.src = "video/drone04.mp4";
+			mainVideo.play();	//need this here to keep video playing
+			clearInterval(timer);	//stop running this function
+		}
+	}
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

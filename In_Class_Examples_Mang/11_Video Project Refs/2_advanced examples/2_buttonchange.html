@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<title>Advanced Button Change</title>
+<style>
+	video {
+		outline:0;	/*prevents blue outline from showing*/
+	}
+</style>
+</head>
+
+<body>
+	<video id="myVideo" height="500" autoplay controls>
+		<source src="video/drone01.mp4" type="video/mp4">
+	</video>
+
+	<div>
+	<button id="theButton">Click to change video source</button>
+	</div>
+
+	<script>
+	var button = document.getElementById("theButton");
+	button.addEventListener("click", changeSource);
+	var mainVideo = document.getElementById("myVideo");
+	var counter = 0;
+
+	function changeSource() {
+		counter++;
+
+		if (counter===1) {
+			mainVideo.src = "video/drone02.mp4";
+		} else if (counter===2) {
+			mainVideo.src = "video/drone03.mp4";
+		} else {
+			mainVideo.src = "video/drone01.mp4";
+			counter = 0;
+		}
+	}
+	</script>
+</body>
+</html>
+
+
+
+
+</body>
+</html>

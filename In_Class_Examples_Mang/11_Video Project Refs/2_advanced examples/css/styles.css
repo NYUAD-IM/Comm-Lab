@@ -1,0 +1,9 @@
+.toHide {
+	display:none;
+}
+
+#countdown {
+	font-family: "Helvetica";
+	font-size: 40px;
+	color: red;
+}

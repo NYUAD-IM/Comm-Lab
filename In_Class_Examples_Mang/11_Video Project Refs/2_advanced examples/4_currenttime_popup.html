@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<title>Advanced Video Popup</title>
+<style>
+	video {
+		outline:0;
+	}
+</style>
+</head>
+
+
+
+<body>
+
+	<video id="myVideo" width="640" controls autoplay>
+		<source src="video/dance.mp4" type="video/mp4">
+	</video>
+
+	<script>
+	var mainVideo = document.getElementById("myVideo");
+	var firstVideo;
+	var secondVideo;
+
+	setInterval(playVideo, 500);
+
+	function playVideo() {
+		if (mainVideo.currentTime >= 3 && mainVideo.currentTime < 3.5) {
+			console.log("in function");
+			firstVideo = window.open("popups/window1.html", '', 'width=640,height=360,top=100,left=100,titlebar=no');
+		} else if (mainVideo.currentTime >= 7 && mainVideo.currentTime < 7.5) {
+			firstVideo.close();
+		
+		} else if (mainVideo.currentTime >= 8 && mainVideo.currentTime < 8.5) {
+			secondVideo = window.open("popups/window2.html", '', 'width=640,height=360,top=200,left=400,titlebar=no');
+		} else if (mainVideo.currentTime >= 13) {
+			secondVideo.close();
+		}
+	}
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>

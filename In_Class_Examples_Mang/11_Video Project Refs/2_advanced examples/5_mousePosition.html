@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<title>Advanced Mouse Position</title>
+<style>
+	#holder {
+		width: 640px;
+		margin: 0 auto;
+	}
+	video {
+		outline: 0;
+	}
+</style>
+</head>
+
+<body>
+	<div id="holder">
+		<video id="myVideo" width="640" autoplay controls>
+			<source src="video/drone01.mp4" type="video/mp4">
+			This browser does not support video.
+		</video>
+	</div>
+
+	<p>Click on either side of the video to change the source</p>
+	<button id="theButton">Return to original clip</button>
+
+	<script>
+		var mainVideo = document.getElementById("myVideo");
+		mainVideo.addEventListener("click", changeSource);
+		var button = document.getElementById("theButton");
+		button.addEventListener("click", showOrig);
+	
+		var xPos;
+		var yPos;
+
+		function changeSource() {
+			xPos = event.offsetX;
+			yPos = event.offsetY; //ensures it is relative to video as opposed to clientX or clientY
+			console.log(xPos);
+
+			if (xPos < 320) {
+				console.log("on left side");
+				mainVideo.src = "video/drone02.mp4";
+			} else {
+				console.log("on right side");
+				mainVideo.src = "video/drone03.mp4";
+			}
+		}
+
+		function showOrig() {
+			mainVideo.src = "video/drone01.mp4";
+		}
+
+	</script>
+
+
+</body>
+</html>
