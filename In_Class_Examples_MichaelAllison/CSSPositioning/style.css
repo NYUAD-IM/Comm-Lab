@@ -1,0 +1,139 @@
+
+/* clear out some default style */
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+
+  background-image: url('images/kitty.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  /* background-color: #ff00ff; */
+  padding: 10px;
+  position: relative;
+}
+
+.wrapper:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: purple;
+}
+
+.one {
+    background: #00ffff;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.two {
+  background: #00ffff;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+.three {
+  background: #00ffff;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+.header {
+  background-color: #ff0011;
+}
+
+.header:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.top-nav {
+  float:right;
+  margin: 10px;
+}
+
+.logo {
+  float:left;
+  margin: 10px;
+}
+
+.section {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.section:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.sidebar {
+  background-color: #00ffff;
+  float: left;
+  width: calc(20% - 20px);
+  padding: 10px;
+}
+
+.main {
+  background-color: #00ff00;
+  float: left;
+  width: calc(80% - 30px);
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #ff0000;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.center-parent {
+  position: relative;
+  height:1000px;
+}
+
+.center-this {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
