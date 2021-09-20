@@ -1,0 +1,163 @@
+
+/* clear defualt style */
+body, ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #ff00ff;
+  padding: 10px;
+}
+
+.header {
+  float: none;
+  background-color: #00ffff;
+  line-height: 1.5;
+}
+
+.logo {
+  vertical-align: middle;
+  display: inline-block;
+  height: calc(100% - 20px);
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.nav {
+  float: right;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.nav li {
+  display: inline;
+}
+
+.header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section {
+  position: relative;
+  background-color: gray;
+}
+
+.section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+  background-color: #ff0000;
+  height: 100%;
+}
+
+.main {
+  float: left;
+  width: calc(80% - 20px);
+  background-color: #00ff00;
+  padding: 10px;
+}
+
+.main img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  float: none;
+  background-color: #00ffff;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.red-text {
+  color: red;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#interactive {
+  position: relative;
+}
+
+/* Overlay Nav */
+
+/* Make the overlay cover the screen */
+.nav-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+}
+
+#close-nav-overlay {
+  display: inline-block;
+  padding: 20px;
+  font-size: 25px;
+  border: #000 1px solid;
+  position: absolute;
+  right: 0;
+}
+
+#close-nav-overlay a {
+  text-decoration: none;
+}
+
+#close-nav-overlay:hover {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+/* Center the nav horizonally and vertically in the parent overlay */
+.nav-overlay-items {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-overlay-item {
+  font-size: 60px;
+  margin: 25px;
+}
+
+.nav-overlay-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-overlay-item a:hover {
+  color: pink;
+}
