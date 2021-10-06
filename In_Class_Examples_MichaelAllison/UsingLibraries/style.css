@@ -1,0 +1,22 @@
+.header {
+  height: 400px;
+  background: lightslategray;
+}
+
+.containter {
+  padding: 20px;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 2000px;
+  grid-gap: 20px;
+}
+
+.item-common {
+  align-self: center;
+  background: bisque;
+  border: lightsalmon 2px solid;
+  width: 300px;
+  height: 200px;
+}

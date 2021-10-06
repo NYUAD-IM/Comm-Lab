@@ -1,17 +1,31 @@
 
 ////////* debug console *////////
 
-console.log("hello JS!");
+console.log("hello JS! Hi!");
 
-////////* variables *////////
-
+// ////////* variables *////////
+//
 var myInteger = 5;
 var myNumber = 5.123;
 var myBool = true;
 var myString = "Hello World!";
 var myOtherString = 'Hello World Again!';
+var myOtherNestedString = 'Hello "World" Again!';
+
 var aNullVariable = null; //a null value, or lack of value
 var anUndefinedVariable; //undefined, never assigned.
+
+if(aNullVariable){
+  console.log("I am not null");
+} else {
+  console.log("I am null");
+}
+
+if(anUndefinedVariable == undefined)
+{
+  console.log("I am undefined!");
+}
+
 
 const myUnchangebleValue = "this cannot be changed.";
 //myUnchangebleValue = "something else";  //this would cause an error
@@ -22,7 +36,7 @@ const myUnchangebleValue = "this cannot be changed.";
 }
 //console.log(thisOnlyExistsInThisScope); //this would cause an error b/c the variable is declared with 'let'
 console.log(thisExistsEverywhere);
-
+//
 ////////* functions *////////
 
 //named functions
@@ -41,6 +55,8 @@ var someFunc = function() {
   return "this function had no name";
 }
 
+console.log(someFunc());
+
 //arrow functions
 
 const printHello = () => {
@@ -58,7 +74,10 @@ var emptyObject = {};
 var objectWithProperties = {
   someName: "hello!",
   someNumber: 2.123,
-  aBool: false
+  aBool: false,
+  aFn: function() {
+    return 10;
+  }
 };
 
 //accessed by dot .
@@ -67,8 +86,10 @@ console.log(objectWithProperties.someName);
 ////////* DOM - the document object model *////////
 
 var aNewDivHTMLElement = document.createElement('div'); //this is not in the DOM yet!
+
 aNewDivHTMLElement.innerHTML = "<p>This was added programmatically!</p>";
 aNewDivHTMLElement.classList.add('red-text');
+
 document.body.appendChild(aNewDivHTMLElement); //add the new element to the body, or any other element!
 
 ////////* show/hide nav overlay by changing css at runtime *////////
@@ -84,7 +105,7 @@ var closeNavButton = document.getElementById('close-nav-overlay');
 closeNavButton.addEventListener("click", function() {
   navOverlay.style.display = 'none';
 });
-
+//
 ////////* mouse interaction *////////
 
 var interactiveElement = document.querySelector('#interactive');
@@ -104,7 +125,7 @@ interactiveElement.addEventListener('mousemove', function(mouse) {
   //use the normalized values to change colors
   interactiveElement.style.backgroundColor = 'rgb(' + lerp(0, 255, normalizedX) + ', ' + lerp(0, 255, normalizedY) + ', 255)';
 });
-
+//
 ////////* timing *////////
 
 setTimeout(function() {
