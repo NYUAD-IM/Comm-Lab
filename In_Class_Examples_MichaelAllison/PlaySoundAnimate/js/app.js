@@ -9,10 +9,10 @@ var woosh = new Howl({
 
 var big = true;
 
-$(".special").click(function(){
+$(".item").click(function(){
 
   woosh.play();
-  
+
   let params;
 
   if(big){
