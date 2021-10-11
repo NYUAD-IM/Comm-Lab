@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.special {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightsteelblue;
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  border: darkcyan 3px solid;
+}
