@@ -1,0 +1,61 @@
+
+.wrapper {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  width: 640px;
+  height: 480px;
+  transform-style: preserve-3d;
+}
+
+.front {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: darksalmon;
+  transform: translateZ(1px);
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform:  rotateY(180deg) translateZ(1px);
+}
+
+.back video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animate-container {
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+.animate-container-back {
+  animation-name: spin-back;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  from { transform: rotate3d(1,1,1, 0deg); }
+  to { transform: rotate3d(0,1,0, 180deg); }
+}
+
+@keyframes spin-back {
+  from { transform: rotate3d(0,1,0, 180deg);}
+  to { transform: rotate3d(1,1,1, 0deg); }
+}
