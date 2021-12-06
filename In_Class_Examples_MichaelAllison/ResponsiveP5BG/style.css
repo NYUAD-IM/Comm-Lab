@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "footer footer footer footer footer";
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  grid-area: header;
+  background-color: aliceblue;
+}
+
+main {
+  grid-area: main;
+  /* background-color: lightgreen; */
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background: antiquewhite;
+}
+
+footer {
+  grid-area: footer;
+  background-color: aliceblue;
+}
+
+.site-title {
+  font-size: 3rem;
+}
+
+.hamburger {
+  display: none;
+  margin: 5px;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .wrapper {
+    position: relative;
+    display: block;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .sidenav  {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .sidenav-open {
+    height: 100px;
+    transition: height 0.5s
+  }
+  .hamburger {
+    display: block;
+  }
+}
