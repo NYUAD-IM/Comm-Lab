@@ -1,0 +1,82 @@
+
+
+body{
+	/*
+	always specifying margin 0 and padding 0 to the whole body means that we start with a clean slate,
+	with no articial spaces that might be introduced by specific browsers
+	*/
+
+	margin: 0;
+	padding: 0;
+
+	background-color: purple;
+}
+
+#column1 {
+	color: white;
+	background-color: grey;
+	width: 75%;
+
+	position: relative;
+	left: 8px;
+}
+
+#para1 {
+	background-color: blue;
+}
+
+#para2 {
+	background-color: lightblue;
+	width: 500px;
+}
+
+#para3 {
+	background-color: darkblue;
+	width: 75%;
+
+	position: relative;
+	left: 8px;
+}
+
+/*
+this chunk affects all text that is between tags with the "important-text" class
+*/
+.important{
+	font-size: 50px;
+	color: blue;
+	background-color: lightblue;
+	/* width: 75%; */
+
+	/* margin: 10px; */
+	/* padding: 8px; */
+
+	/*
+	font-size: 46px;
+	color: red;
+	background-color: black;
+	text-decoration: underline;
+	font-weight: bold;
+	*/
+}
+
+.inside {
+	color: orange;
+	font-size: 0.5em;
+	background-color: #D6EAF8;
+}
+
+.colortext {
+	color: rgb(200, 10, 0);
+	background-color: #00C000;
+}
+
+/*
+this chunk affects all text that is between tags with the "faded-text" class
+*/
+.trivial{
+	/*
+	font-size: 12px;
+	color: grey;
+	*/
+	background-color: grey;
+}

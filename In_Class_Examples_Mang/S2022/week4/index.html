@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>HTML + CSS</title>
+
+		<!-- here we specify that we need to link a CSS file to our present HTML page,
+		and we specify, in the href attribute, where that  CSS file lives -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<p class="important">
+			<a href="https://www.nyuadim.com/">Check out NYUADIM</a> (it's the best)
+		</p>
+		<p class="important">
+			<a href="bio.html" target="_blank">Check out my Bio</a>
+
+			<!-- This relative URL goes up to the main directory and then into
+					 the Assets directory to reference the image -->
+			<img src="../../../Assets/24ff.png">
+		</p>
+		<p>
+			Let's go <a href="#wheretogo">there</a> in the page.
+		</p>
+		<div id="column1">
+			<p id="para1">
+				Paragraph 1
+			</p>
+
+			<p id="para2">
+				Paragraph 2
+			</p>
+			<p id="para3">
+				Paragraph 3
+			</p>
+			<p id="para3">
+				Paragraph 4
+			</p>
+		</div>
+
+		<!-- the class here is "important" -->
+		<div class="important">
+
+			<!-- everything between the tags that have the class "important"
+			will be styled according to what we have written in the CSS file -->
+			<p>
+				What I write here is crucial. So very very very very very very crucial.
+			</p>
+
+			<p class="inside">
+				What <span class="colortext">color</span> is this? Some more stuff stuff stuff. Some more stuff stuff stuff.
+			</p>
+		</div>
+
+		<!-- the class here is called trivial -->
+		<div class="important" id="wheretogo">
+
+			<!-- everything between the tags that have the class "trivial"
+			will be styled according to what we have written in the CSS file -->
+			<p>
+				Let's go here.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+				What I write here is not as crucial.
+
+			</p>
+		</div>
+
+		<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+		<!--<script src="scripts.js"></script>-->
+	</body>
+</html>
