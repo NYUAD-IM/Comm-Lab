@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+html {
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.main {
+  font-size: 1.5rem;
+  color: black;
+  background-color: rgba(191, 185, 59, .5);
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid bisque;
+  width: 50px;
+  height: 50px;
+  display: block;
+  vertical-align: top;
+}
+
+.one {
+
+}
+
+.two {
+  background-color: fuchsia;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+
+.three {
+  background-color: purple;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.four {
+
+}
+
+.five {
+  position: relative;
+}
