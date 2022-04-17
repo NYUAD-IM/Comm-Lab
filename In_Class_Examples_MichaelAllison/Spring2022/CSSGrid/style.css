@@ -1,0 +1,127 @@
+
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+.myGrid {
+  background-color: aqua;
+  padding: 20px;
+  max-width: 900px;
+  min-height: 200px;
+  margin: 20px auto 0 auto;
+  /* grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
+  grid-gap: 20px;
+}
+
+.myGrid div {
+  background-color: lightcoral;
+  padding: 5px;
+  min-height: 200px;
+}
+
+.myGrid2 {
+  background-color: lavender;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 500px;
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr .5fr .75fr;
+  /* grid-gap: 20px; */
+}
+
+.item {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.item:nth-child(1) {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+  background-color: rgba(255, 0, 0, .25);
+}
+
+.item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(0, 0, 255, .25);
+}
+
+.item:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: rgba(255, 0, 0, .25);
+}
+
+.item:nth-child(4) {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  background-color: rgba(255, 255, 0, .25);
+}
+
+.item:nth-child(5) {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  background-color: rgba(0, 0, 255, .25);
+}
+
+.item:nth-child(6) {
+  grid-column: -2;
+  grid-row: -2;
+  background-color: rgba(0, 255, 0, .25);
+}
+
+.item:nth-child(7) {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  background-color: rgba(0, 255, 0, .25);
+}
+
+.item:nth-child(8) {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: rgba(0, 0, 255, .25);
+}
+
+.item:nth-child(9) {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: rgba(0, 255, 0, .25);
+}
+
+
+.myGrid3 {
+  background-color: coral;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 500px;
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.myGrid3 div {
+  background-color: aliceblue;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.myGrid3 div:nth-child(even){
+  justify-self: end;
+  grid-column: 1;
+}
+
+.myGrid3 div:nth-child(odd){
+  justify-self: start;
+  grid-column: 2;
+}
