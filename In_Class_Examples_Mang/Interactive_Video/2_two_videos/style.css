@@ -1,0 +1,65 @@
+html{
+	height: 100%;
+	font-family: 'Helvetica', sans-serif;
+}
+
+body{
+	height: 100%;
+	margin: 0;
+}
+
+.video-section{
+	display: flex;
+	height: 100%;
+}
+
+video{
+	width: 50%;
+	margin: auto;
+}
+
+.video-controls{
+	position: fixed;
+    bottom: 16px;
+    width: 100%;
+}
+
+.controls{
+	font-size: 24px;
+	display: block;
+	text-align: center;
+}
+
+.controls:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#start{
+	position: absolute;
+    top: 50%;
+    font-size: 36px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: white;
+    color: black;
+    transition: background 1s, color 1s;
+}
+
+#start:hover{
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+
+@keyframes fade{
+	from{
+		opacity: 1;
+	}
+
+	to{
+		opacity: 0;
+	}
+}
